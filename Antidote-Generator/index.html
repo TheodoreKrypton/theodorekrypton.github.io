@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Bootstrap 101 Template</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+  <div class="main">
+    <h3 style="text-align: center;">武汉肺炎病毒解药生成器</h3>
+
+    <div class="form-group">
+      <label for="antidote">解药名称</label>
+      <input type="text" class="form-control" id="antidote" placeholder="双黄连">
+    </div>
+    <div class="form-group">
+      <label for="ins">机构名称</label>
+      <input type="text" class="form-control" id="ins" placeholder="中科院上海药物所">
+    </div>
+    <!-- <div class="form-group">
+        <label for="color">解药颜色</label>
+        <input type="color" class="form-control" id="color">
+      </div> -->
+    <button class="btn btn-default" onclick="generate()">生成解药</button>
+  </div>
+  <br><br><br>
+  <div class="main-article">
+    <div style="margin: 3%;">
+      <div class="title">有药了！<span class="antidote_name"></span>可抑制新型冠状病毒！</div>
+      <div class="author">
+        <div class="author-left">
+          <div class="avatar">
+            <img class="avatar-image" src="http://p1.pstatp.com/thumb/66bb0004ee5b33080ff0">
+          </div>
+          <div class="author-info">
+            <div class="author-name">
+              文汇网
+            </div>
+          </div>
+        </div>
+        <div class="author-right">7小时前·999评论</div>
+      </div>
+    </div>
+    <p>
+      <br>
+    </p>
+    <img style="max-width: 94%; margin-left: 3%; margin-right: 3%;"
+      src="https://i.loli.net/2020/02/01/HsY6kynwt3jUcpb.png">
+    <p>
+      <br>
+    </p>
+    <div class="article-content">
+      <p class="article">
+        近日，经过<span class="ins_name"></span>研究，初步发现<span class="antidote_name"></span>可抑制新型冠状病毒（2019-nCoV）。
+      </p>
+      <p class="article">
+        面对新型冠状病毒感染肺炎肆虐的严峻形势，<span class="ins_name"></span>启动由蒋华良院士牵头的抗新型冠状病毒感染肺炎药物研究应急攻关团队，
+        在前期SARS相关研究和药物发现成果基础上，聚焦针对该病毒的治疗候选新药筛选、评价和老药新用研究。近日，经过<span class="ins_name"></span>研究，
+        初步发现<span class="antidote_name"></span>可抑制新型冠状病毒（2019-nCoV）。
+      </p>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+      crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"></script>
+    <script>
+      function generate() {
+        let ins = document.getElementById("ins").value;
+        let antidote = document.getElementById("antidote").value;
+        $(".ins_name").html(ins);
+        $(".antidote_name").html(antidote);
+      }
+
+    </script>
+  </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+body {
+  background-color: #fff;
+}
+
+.main {
+  margin: 5%;
+  margin: 5%;
+}
+
+.main-article {
+  font-family: 'PingFangSC','STHeiti','Microsoft YaHei','Helvetica','Arial',sans-serif;
+  word-break: break-word;
+}
+
+.title {
+  font-size: 21px;
+  line-height: 30px;
+  font-family: 'PingFangSC-Medium';
+  font-weight: 500;
+  color: #222222;
+}
+
+.author {
+  position: relative;
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.author-left {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+  margin: auto;
+  display: inline-block;
+}
+
+.avatar-image {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.author-info {
+  margin-left: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.author-name {
+  font-size: 14px;
+  color: #222;
+  font-weight: 700;
+  margin-right: 6px;
+}
+
+.author-right {
+  align-self: center;
+  color: #999999;
+}
+
+.article-content {
+  position: relative;
+  overflow: hidden;
+  clear: both;
+  padding: 0 14px;
+  padding-bottom: 24px;
+}
+
+.article {
+  word-wrap: break-word;
+  color: #222;
+  text-align: justify;
+  list-style-position: inside;
+  list-style-type: square;
+  font-size: 17px;
+  line-height: 25px;
+  border: none;
+  outline: none;
+  max-height: 100%;
+}
